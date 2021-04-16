@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet"type="text/css"href="formcss.css" media=""/>
+    <title>cadastro</title>
+</head>
+<body>
+    <div class="campo">
+        <h1 id="titulo">cadastro de Devs</h1>
+        <p id="subtitulo">complete suas informaçôes</p>
+        <br />
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome">nome </label>
+                <input type="text"name="nome"id="nome" required/> 
+            </div>
+            <div class="campo">
+                <label for="sobrenome">sobrenome</label>
+                <input type="text"name="sobrenome"id="sobrenome" required/>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <label for="email">email  </label>
+            <input type="email" name="email"id="email" required/>
+        </div>
+        <div class="campo">
+            <label>De qual lado de aplicação você desenvolve</label><br />
+            <label>
+                <input type="radio"name="devweb"value="frontend" checked/>Front-end
+            </label>
+            <label>
+                <input type="radio"name="devwev"value="backend"/>Back-end
+            </label>
+            <label>
+                <input type="radio"name="devweb"value="fullstack"/>Fullstack
+            </label>
+        </div>
+        <div class="campo">
+            <label for="serioridade">senioridade  </label>
+            <select id="senioridade">
+                <option>junior</option>
+                <option>pleno</option>
+                <option>senior</option>
+            </select>
+        </div>
+        <fieldset class="grupo">
+            <label>selecione as tecnologias que usa</label><br/><br/>
+            <input type="checkbox"id="tec1"name="tec1"value="HTML" />
+            <label for="tec1"> HTML</label>
+            <input type="checkbox"id="tec2"name="tec2"value="CSS" />
+            <label for="tec2">CSS</label>
+        </fieldset>
+        <div class="campo">
+            <br />
+            <label>conte um pouco de sua experiência</label><br />
+            <textarea rows="6" style="width:26em"id="exp"name="exp"></textarea>
+        </div>
+        <button class="botao" type="submit">concluído</button>
+    </form>
+</body>
+</html>
